@@ -1,5 +1,5 @@
 # gridviewPager
-Custom GridView Pager User Web Control
-Easily Useage
-Method:InitPager -- Initial pager when binding data at the first time.
-Event:PageClick -- Trigger when pager clicked, rebind data.
+<h1>GridView Pager User Web Control</h1>
+<h3>Easily Useage</h3>
+<p>Method:InitPager -- Initial pager when binding data at the first time.</p>
+<p>Event:PageClick -- Trigger when pager clicked, rebind data.</p>
