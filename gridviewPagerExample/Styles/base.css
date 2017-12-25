@@ -1,0 +1,162 @@
+﻿/*------css reset------*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+
+/* remember to define focus styles! */
+:focus {
+    outline: 0;
+}
+
+/* remember to highlight inserts somehow! */
+ins {
+    text-decoration: none;
+}
+del {
+    text-decoration: line-through;
+}
+
+/* tables still need 'cellspacing="0"' in the markup */
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+img { vertical-align: middle; }
+
+body { font-family: Calibri 微軟正黑體 新細明體 }
+/*------css reset------*/
+
+.gridview-style
+{
+	font-size: 14px;
+	border: 1px solid #7388c1;
+	width: 100%;
+	}
+	
+.gridview-style tr th, .gridview-style tr td
+{
+	/*border: 1px solid #d4d0c8;*/
+	padding: 5px 3px;
+	}
+.gridview-style tr th
+{
+	color: #f3feff;
+	background-color: #00a6ae;
+	font-weight: bold;
+	border-left: 1px solid #f3feff;
+	white-space: nowrap;
+}
+.gridview-style tr td
+{
+	border-left: 1px solid #7388c1;	
+	border-bottom: 1px solid #7388c1;
+}
+.gridview-style tr td:first-child, 
+.gridview-style tr th:first-child {	border-left: 0px; }
+	
+.gridview-style a { text-decoration: underline; color: Blue; cursor: pointer; }
+.gridview-style a:hover { text-decoration: none; }
+.gridview-style tr:nth-child(odd) {	background-color: #fafaff; }
+
+.gvw-sort { cursor: pointer; }
+.gvw-sort:hover { color: #ffdbbb; }
+.gvw-sort-asc, .gvw-sort-desc { color: #f7ff77; }
+.gvw-sort-asc:after { content: '▲'; font-size: 0.8em; }
+.gvw-sort-desc:after { content: '▼'; font-size: 0.8em; }
+
+/*------------Gridview Pager(web user control) style-----------*/
+.wuc_pager
+{
+    background-color: #00a6ae;
+	font-size: .95em;
+	height: 22px;
+	padding: 5px;
+	color: White;
+	}
+.wuc_pager > div { float: left;	}
+.wuc_pager a
+{
+    color: #245580;
+	background-color: #eff9f9;
+	border: 1px solid #c2c2c2;
+	border-radius: 3px;
+	text-decoration: none;
+}
+
+.wuc_pager_span
+{
+	display: inline-block; padding: 3px 3px 6px;
+	vertical-align: middle;
+	min-width: 12px;
+	height: 11px;
+}
+
+.wuc_pager a:hover
+{
+	background-color: #3a96e3;
+	border-color: #4a33f6;
+	color: #fff;
+}
+
+.wuc_pager_block
+{
+	font-size: 1em;
+	position: relative;
+	display: block;
+    padding-top: 3px; 
+    padding-left: 8px;
+}
+
+.wuc_pager_tbx
+{
+	float: right;
+	margin-right: 5px;
+}
+
+.wuc_pager_tbx>input { margin-right: 3px; padding: 0 2px; }
+
+.wuc_pager_warn
+{
+	position: absolute; display: none;
+	top: 23px; left: 5px;
+	z-index: 10; white-space: nowrap;
+	color: Red; padding: 3px; background-color: White;
+	display: block; border: 1px solid #ababab;
+}
+
+.pager-box{
+	background:url(../images/UI/table-box-head.jpg) center repeat-x #FFF;
+	width: 100%; position: relative; 
+	left: -10px; 
+	padding-left: 10px; padding-right: 10px; 
+	padding-bottom: 5px; *padding-bottom: 4px;
+	border-top: 1px solid #efefef;
+	height: 22px; display: block;
+}
