@@ -198,7 +198,31 @@ namespace gridviewPagerExample.UserControls
 
             }
         }
+        protected void Item_Bound(Object sender, DataListItemEventArgs e)
+        {
+            if (e.Item.ItemType == ListItemType.Item ||
+                e.Item.ItemType == ListItemType.AlternatingItem)
+            {
+                LinkButton LnkNumber = e.Item.FindControl("LnkNumber") as LinkButton;
+                Label LblNumber = e.Item.FindControl("LblNumber") as Label;
 
+                GvwPage pageItem = ((GvwPage)e.Item.DataItem);
+                if (pageItem != null) ;
+                {
+                    if (LnkNumber != null)
+                    {
+                        LnkNumber.Text = pageItem.pText;
+                        LnkNumber.Visible = pageItem.ShowLink;
+                        LnkNumber.CommandArgument = pageItem.page;
+                    }
+                    if (LblNumber != null)
+                    {
+                        LblNumber.Text = pageItem.pText;
+                        LblNumber.Visible = pageItem.ShowLabel;
+                    }
+                }
+            }
+        }
         private class GvwPage
         {
             public GvwPage(string x, string p, bool s)

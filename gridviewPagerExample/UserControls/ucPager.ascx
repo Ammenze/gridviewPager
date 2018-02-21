@@ -4,11 +4,10 @@
         <span>
         <asp:LinkButton ID="LnkPrev" runat="server" OnClick="LnkNumber_Click" CssClass="wuc_pager_span"></asp:LinkButton>
         </span>
-        <asp:DataList ID="DataList1" runat="server" RepeatDirection="Horizontal" RepeatLayout="Flow">
+        <asp:DataList ID="DataList1" runat="server" RepeatDirection="Horizontal" RepeatLayout="Flow" OnItemDataBound="Item_Bound">
             <ItemTemplate>
-                <asp:LinkButton ID="LnkNumber" runat="server" CommandArgument='<%# Eval("page") %>' CssClass="wuc_pager_span"
-                    Visible='<%# Eval("ShowLink") %>' OnClick="LnkNumber_Click" Text='<%# Eval("pText") %>'></asp:LinkButton>
-                <asp:Label ID="LblNumber" runat="server" Text='<%# Eval("pText") %>' Visible='<%# Eval("ShowLabel") %>' CssClass="wuc_pager_span"></asp:Label>
+                <asp:LinkButton ID="LnkNumber" runat="server" CssClass="wuc_pager_span" OnClick="LnkNumber_Click"></asp:LinkButton>
+                <asp:Label ID="LblNumber" runat="server" CssClass="wuc_pager_span"></asp:Label>
             </ItemTemplate>
         </asp:DataList>
         <span>
